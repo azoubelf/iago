@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/bg.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    cursor: crosshair;
+}
+
+h1 {
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.28em;
+    text-shadow: 0 0 7px red;
+}
+
+hr {
+    margin: 0;
+    width: 100%;
+}
+
+.vermelho {
+    border: 10px solid red;
+}
+
+.preto {
+    border: 10px solid black;
+}
+
+.img-box img {
+    width: 50%;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1:before {
+    content: '友達よ、お誕生日おめでとう';
+}
+
+h1:hover:before {
+    content: 'Feliz aniversário, meu consagrado';
+    color: white;
+    /* text-shadow: 1px 1px 1px #1d1d1d; */
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+}
+
+p {
+    color: white;
+    text-shadow: 0 0 10px red;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: justify;
+}
+
+.img-box {
+    display: flex;
+}
+
+img {
+    width: 60%;
+}
+
+.img-fundo {
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+}
